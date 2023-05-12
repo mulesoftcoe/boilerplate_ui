@@ -1,4 +1,4 @@
-![Verify Build Workflow](https://github.com/Apicurio/apicurio-studio/workflows/Verify%20Build%20Workflow/badge.svg)
+
 
 # The mule-boilerplate-studio project (Open Source API Design Studio)
 
@@ -14,7 +14,7 @@ new or edit existing API designs (using the OpenAPI specification).
 The easiest way to get started with the code is to [create your own fork](http://help.github.com/forking/)
 of this repository, and then clone your fork:
 ```bash
-  $ git clone git@github.com:<you>/apicurio-studio.git
+  $ git clone git@github.com:<you>/boilerplate_ui.git
   $ cd apicurio-studio
   $ git remote add upstream git://github.com/apicurio/apicurio-studio.git
 ```
@@ -57,7 +57,7 @@ If you want to fix a bug or make any changes, please [log an issue in GitHub] de
 or new feature. Then we highly recommend making the changes on a topic branch named with the JIRA issue number. For example, this command creates
 a branch for the APISTUDIO-1234 issue:
 ```bash
-  $ git checkout -b apicurio-studio-1234
+  $ git checkout -b boilerplate_ui-1234
 ```
 After you're happy with your changes and a full build (with unit tests) runs successfully, commit your
 changes on your topic branch. Then it's time to check for and pull any recent changes that were made in
@@ -65,18 +65,18 @@ the official repository:
 ```bash
   $ git checkout master               # switches to the 'master' branch
   $ git pull upstream master          # fetches all 'upstream' changes and merges 'upstream/master' onto your 'master' branch
-  $ git checkout apicurio-studio-1234   # switches to your topic branch
+  $ git checkout boilerplate_ui-1234   # switches to your topic branch
   $ git rebase master                 # reapplies your changes on top of the latest in master
                                       # (i.e., the latest from master will be the new base for your changes)
 ```
 If the pull grabbed a lot of changes, you should rerun your build to make sure your changes are still good.
 You can then either [create patches](http://progit.org/book/ch5-2.html) (one file per commit, saved in `~/apicurio-studio-1234`) with
 ```bash
-  $ git format-patch -M -o ~/apicurio-studio-1234 orgin/master
+  $ git format-patch -M -o ~/boilerplate_ui-1234 orgin/master
 ```
 and upload them to the JIRA issue, or you can push your topic branch and its changes into your public fork repository
 ```bash
-  $ git push origin apicurio-studio-1234         # pushes your topic branch into your public fork of apicurio-studio
+  $ git push origin boilerplate_ui-1234         # pushes your topic branch into your public fork of apicurio-studio
 ```
 and [generate a pull-request](http://help.github.com/pull-requests/) for your changes.
 
@@ -89,10 +89,10 @@ This makes reverting changes easier, and avoids needlessly polluting the reposit
 ## Code Formatting
 
 When you are hacking on some apicurio-studio code, we'd really appreciate it if you followed the
-apicurio-studio coding standards.  If you're using Eclipse, you can find a code formatter config
+boilerplate_ui coding standards.  If you're using Eclipse, you can find a code formatter config
 file here:
 ```
-tools/src/eclipse/apicurio-eclipse-formatter.xml
+tools/src/eclipse/boilerplate_ui-eclipse-formatter.xml
 ```
 You should be able to import that guy straight into Eclipse by going to
 *Window->Preferences :: Java/Code Style/Formatter*
