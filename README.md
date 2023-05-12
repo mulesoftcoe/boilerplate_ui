@@ -70,7 +70,7 @@ the official repository:
                                       # (i.e., the latest from master will be the new base for your changes)
 ```
 If the pull grabbed a lot of changes, you should rerun your build to make sure your changes are still good.
-You can then either [create patches](http://progit.org/book/ch5-2.html) (one file per commit, saved in `~/apicurio-studio-1234`) with
+You can then either [create patches](http://progit.org/book/ch5-2.html) (one file per commit, saved in `~/mulesoftcoe-1234`) with
 ```bash
   $ git format-patch -M -o ~/boilerplate_ui-1234 orgin/master
 ```
